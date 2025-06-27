@@ -1,10 +1,8 @@
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
-import Hero from './components/ui/Home';
-import TrustedBySection from './components/ui/TrustedBy';
-import HowToBooking from './components/ui/HowTo';
-import PropertyPreview from './components/ui/PropertyPreview';
-import ValueAdd from './components/ui/ValueAdd';
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import Hero from "./components/ui/Home";
+import PropertyPreview from "./components/ui/PropertyPreview";
+import ValueAdd from "./components/ui/ValueAdd";
 
 export default function Home() {
   return (
