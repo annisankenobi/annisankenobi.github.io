@@ -389,6 +389,10 @@
     margin-bottom: calc(var(--spacing) * 15);
   }
 
+  .ml-12 {
+    margin-left: calc(var(--spacing) * 12);
+  }
+
   .ml-49 {
     margin-left: calc(var(--spacing) * 49);
   }
@@ -509,6 +513,10 @@
 
   .justify-center {
     justify-content: center;
+  }
+
+  .justify-start {
+    justify-content: flex-start;
   }
 
   .justify-items-center {

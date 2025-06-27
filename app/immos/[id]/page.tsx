@@ -28,7 +28,7 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
     <div className="min-h-screen flex flex-col bg-[#F5F5F5]">
       <Header />
       <main className="flex-grow mb-15 mt-8">
-        <div className="flex flex-col sm:flex-row gap-4 justify-left mb-6 ml-49">
+        <div className="flex flex-col sm:flex-row gap-4 justify-start mb-6 ml-12">
           <Link
             href="/immos"
             className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
