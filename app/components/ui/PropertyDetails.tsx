@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { Property } from '@/lib/data/immos';
+import React, { useState } from "react";
+import Image from "next/image";
+import { Property } from "@/lib/data/immos";
 
 interface PropertyDetailsProps {
   property: Property;
@@ -10,14 +10,9 @@ interface PropertyDetailsProps {
 
 const PropertyDetails: React.FC<PropertyDetailsProps> = ({ property }) => {
   const [current, setCurrent] = useState(0);
-  const images = property.images ?? [property.imageUrl || "/images/product-1.png"];
-
-  const formatPrice = (price: number) =>
-    new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'EUR',
-      maximumFractionDigits: 0,
-    }).format(price);
+  const images = property.images ?? [
+    property.imageUrl || "/images/product-1.png",
+  ];
 
   return (
     <section className="md:section-sm px-4">
@@ -32,7 +27,9 @@ const PropertyDetails: React.FC<PropertyDetailsProps> = ({ property }) => {
             className="w-full h-auto object-cover rounded-md"
           />
           <button
-            onClick={() => setCurrent(current === 0 ? images.length - 1 : current - 1)}
+            onClick={() =>
+              setCurrent(current === 0 ? images.length - 1 : current - 1)
+            }
             className="absolute top-1/2 left-4 -translate-y-1/2 bg-white dark:bg-white p-2 rounded-full text-black border"
             aria-label="Previous image"
           >
@@ -51,7 +48,9 @@ const PropertyDetails: React.FC<PropertyDetailsProps> = ({ property }) => {
                 key={index}
                 onClick={() => setCurrent(index)}
                 className={`w-3 h-3 rounded-full ${
-                  index === current ? 'bg-gray-400 dark:bg-gray-600 border' : 'bg-primary border'
+                  index === current
+                    ? "bg-gray-400 dark:bg-gray-600 border"
+                    : "bg-primary border"
                 }`}
               />
             ))}
@@ -70,7 +69,9 @@ const PropertyDetails: React.FC<PropertyDetailsProps> = ({ property }) => {
               <span className="text-gray-500">Schlafzimmer</span>
             </div>
             <div className="text-center">
-              <span className="block text-2xl font-bold">{property.bathrooms}</span>
+              <span className="block text-2xl font-bold">
+                {property.bathrooms}
+              </span>
               <span className="text-gray-500">Badezimmer</span>
             </div>
             <div className="text-center">

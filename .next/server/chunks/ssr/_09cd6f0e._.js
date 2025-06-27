@@ -388,7 +388,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 ;
 ;
 ;
-function PropertyCard({ property, layout = "grid" }) {
+function PropertyCard({ property }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
         href: `/immos/${property.id}`,
         passHref: true,
@@ -825,7 +825,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$data$2f$immos$2e$ts__
 ;
 ;
 ;
-function FeaturedProperties({ layout = "grid", searchValue = "" }) {
+function FeaturedProperties({ searchValue = "" }) {
     const filteredProperties = searchValue ? __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$data$2f$immos$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["properties"].filter((property)=>property.title.toLowerCase().includes(searchValue.toLowerCase()) || property.description.toLowerCase().includes(searchValue.toLowerCase()) || property.location.toLowerCase().includes(searchValue.toLowerCase())) : __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$data$2f$immos$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["properties"];
     const displayedProperties = filteredProperties.slice(0, 3);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -839,7 +839,7 @@ function FeaturedProperties({ layout = "grid", searchValue = "" }) {
                         children: "Erkunden Sie verschiedene Lösungen für möblierte Firmenwohnungen"
                     }, void 0, false, {
                         fileName: "[project]/app/components/ui/PropertyPreview.tsx",
-                        lineNumber: 21,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -847,13 +847,13 @@ function FeaturedProperties({ layout = "grid", searchValue = "" }) {
                         children: "Wir teilen Ihnen einen individuell abgestimmten Mietpreis mit – abhängig von Personenzahl, Bedarf und Aufenthaltsdauer."
                     }, void 0, false, {
                         fileName: "[project]/app/components/ui/PropertyPreview.tsx",
-                        lineNumber: 22,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/ui/PropertyPreview.tsx",
-                lineNumber: 20,
+                lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -864,17 +864,17 @@ function FeaturedProperties({ layout = "grid", searchValue = "" }) {
                             property: property
                         }, property.id, false, {
                             fileName: "[project]/app/components/ui/PropertyPreview.tsx",
-                            lineNumber: 30,
+                            lineNumber: 35,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/components/ui/PropertyPreview.tsx",
-                    lineNumber: 28,
+                    lineNumber: 33,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/ui/PropertyPreview.tsx",
-                lineNumber: 27,
+                lineNumber: 32,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -885,18 +885,18 @@ function FeaturedProperties({ layout = "grid", searchValue = "" }) {
                     children: "Mehr sehen →"
                 }, void 0, false, {
                     fileName: "[project]/app/components/ui/PropertyPreview.tsx",
-                    lineNumber: 36,
-                    columnNumber: 11
+                    lineNumber: 41,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/ui/PropertyPreview.tsx",
-                lineNumber: 35,
-                columnNumber: 9
+                lineNumber: 40,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/ui/PropertyPreview.tsx",
-        lineNumber: 19,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 }

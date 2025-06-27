@@ -19,7 +19,7 @@ type PropertyCardProps = {
   layout?: "grid" | "list";
 };
 
-export default function PropertyCard({ property, layout = "grid" }: PropertyCardProps) {
+export default function PropertyCard({ property }: PropertyCardProps) {
   return (
     <Link href={`/immos/${property.id}`} passHref>
       <div className="rounded-xl overflow-hidden bg-white dark:bg-darkmode-dark cursor-pointer hover:shadow-lg transition-shadow duration-200">
