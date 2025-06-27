@@ -287,6 +287,10 @@
     position: relative;
   }
 
+  .static {
+    position: static;
+  }
+
   .top-1\/2 {
     top: 50%;
   }
@@ -395,10 +399,6 @@
 
   .block {
     display: block;
-  }
-
-  .contents {
-    display: contents;
   }
 
   .flex {

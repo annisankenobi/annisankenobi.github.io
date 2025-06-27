@@ -5,20 +5,26 @@ import PropertyDetails from "@/app/components/ui/PropertyDetails";
 import { properties } from "@/lib/data/immos";
 import Link from "next/link";
 
+// Define props type separately
+interface PropertyPageProps {
+  params: {
+    id: string;
+  };
+}
+
+// For static generation
 export async function generateStaticParams() {
   return properties.map((property) => ({
-    id: property.id,
+    id: property.id.toString(),
   }));
 }
 
-export default async function PropertyPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+// Page component
+export default async function PropertyPage({ params }: PropertyPageProps) {
   const { id } = params;
 
-  const property = properties.find((p) => p.id === id);
+  // Convert to string if IDs are stored as numbers
+  const property = properties.find((p) => p.id.toString() === id);
 
   if (!property) return notFound();
 
