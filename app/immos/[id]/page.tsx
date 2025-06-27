@@ -5,19 +5,17 @@ import PropertyDetails from "@/app/components/ui/PropertyDetails";
 import { properties } from "@/lib/data/immos";
 import Link from "next/link";
 
-type PropertyPageProps = {
-  params: {
-    id: string;
-  };
-};
-
 export async function generateStaticParams() {
   return properties.map((property) => ({
     id: property.id,
   }));
 }
 
-export default async function PropertyPage({ params }: PropertyPageProps) {
+export default async function PropertyPage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const { id } = params;
 
   const property = properties.find((p) => p.id === id);

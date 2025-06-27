@@ -393,10 +393,6 @@
     margin-left: calc(var(--spacing) * 12);
   }
 
-  .ml-49 {
-    margin-left: calc(var(--spacing) * 49);
-  }
-
   .block {
     display: block;
   }
