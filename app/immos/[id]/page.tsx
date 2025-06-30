@@ -1,7 +1,9 @@
 import Header from "@/app/components/layout/Header";
 import Footer from "@/app/components/layout/Footer";
 import { properties } from "@/lib/data/immos";
+import PropertyDetails from "@/app/components/ui/PropertyDetails";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams(): Promise<{ id: string }[]> {
   return properties.map((property) => ({
@@ -9,7 +11,12 @@ export async function generateStaticParams(): Promise<{ id: string }[]> {
   }));
 }
 
-export default function Page() {
+export default async function Page({ params }: { params: { id: string } }) {
+  const property = properties.find((p) => p.id.toString() === params.id);
+
+  if (!property) {
+    notFound();
+  }
   return (
     <div className="min-h-screen flex flex-col bg-[#F5F5F5]">
       <Header />
@@ -28,6 +35,7 @@ export default function Page() {
             Kontaktieren
           </Link>
         </div>
+        <PropertyDetails property={property} />
       </main>
       <Footer />
     </div>
