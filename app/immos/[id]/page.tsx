@@ -3,8 +3,7 @@ import Footer from "@/app/components/layout/Footer";
 import PropertyDetails from "@/app/components/ui/PropertyDetails";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-
-import { properties, type Property } from "@/lib/data/immos"; // ✅ your source of truth
+import { properties } from "@/lib/data/immos"; // ✅ your source of truth
 
 // For static generation of all [id] pages
 export async function generateStaticParams(): Promise<{ id: string }[]> {
@@ -22,7 +21,7 @@ export default async function PropertyPage({
   const { id } = params;
 
   // Find the property matching the id
-  const property = properties.find((p) => p.id.toString() === id);
+  const property = properties.find((p) => p.id === id);
 
   if (!property) return notFound(); // ✅ prevents undefined from reaching child
 
