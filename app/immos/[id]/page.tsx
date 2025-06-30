@@ -1,11 +1,10 @@
-import { notFound } from "next/navigation";
 import Header from "@/app/components/layout/Header";
 import Footer from "@/app/components/layout/Footer";
 import PropertyDetails from "@/app/components/ui/PropertyDetails";
 import { properties } from "@/lib/data/immos";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
-// Define props type separately
 interface PropertyPageProps {
   params: {
     id: string;
@@ -21,9 +20,9 @@ export async function generateStaticParams() {
 
 // Page component
 export default async function PropertyPage({ params }: PropertyPageProps) {
-  const { id } = await params;
+  const { id } = params; // ✅ DO NOT await this
 
-  // Convert to string if IDs are stored as numbers
+  // If using static array:
   const property = properties.find((p) => p.id.toString() === id);
 
   if (!property) return notFound();
