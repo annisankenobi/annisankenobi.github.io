@@ -1,6 +1,6 @@
-import Header from '@/app/components/layout/Header';
-import Footer from '@/app/components/layout/Footer';
-import Properties from '@/app/components/ui/AllProperties';
+import Header from "@/app/components/layout/Header";
+import Footer from "@/app/components/layout/Footer";
+import Properties from "@/app/components/ui/AllProperties";
 
 export default function PropertiesPage() {
   return (
