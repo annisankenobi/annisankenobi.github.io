@@ -1,22 +1,31 @@
 import Header from "@/app/components/layout/Header";
 import Footer from "@/app/components/layout/Footer";
-import { properties } from "@/lib/data/immos";
 import PropertyDetails from "@/app/components/ui/PropertyDetails";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { properties, type Property } from "@/lib/data/immos"; // ✅ your source of truth
+
+// For static generation of all [id] pages
 export async function generateStaticParams(): Promise<{ id: string }[]> {
   return properties.map((property) => ({
     id: property.id.toString(),
   }));
 }
 
-export default async function Page({ params }: { params: { id: string } }) {
-  const property = properties.find((p) => p.id.toString() === params.id);
+// Page component
+export default async function PropertyPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  const { id } = params;
 
-  if (!property) {
-    notFound();
-  }
+  // Find the property matching the id
+  const property = properties.find((p) => p.id.toString() === id);
+
+  if (!property) return notFound(); // ✅ prevents undefined from reaching child
+
   return (
     <div className="min-h-screen flex flex-col bg-[#F5F5F5]">
       <Header />
