@@ -19,10 +19,13 @@ export async function generateStaticParams() {
 }
 
 // Page component
-export default async function PropertyPage({ params }: PropertyPageProps) {
-  const { id } = params; // ✅ DO NOT await this
+export default async function PropertyPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  const { id } = params;
 
-  // If using static array:
   const property = properties.find((p) => p.id.toString() === id);
 
   if (!property) return notFound();
