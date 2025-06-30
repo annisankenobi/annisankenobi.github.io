@@ -1,29 +1,8 @@
-import { notFound } from "next/navigation";
 import Header from "@/app/components/layout/Header";
 import Footer from "@/app/components/layout/Footer";
-import PropertyDetails from "@/app/components/ui/PropertyDetails";
-import { properties } from "@/lib/data/immos";
 import Link from "next/link";
 
-// For static generation
-export async function generateStaticParams(): Promise<{ id: string }[]> {
-  return properties.map((property) => ({
-    id: property.id.toString(),
-  }));
-}
-
-// Page component
-export default async function PropertyPage({
-  params,
-}: {
-  params: { id: string };
-}) {
-  const { id } = params;
-
-  const property = properties.find((p) => p.id.toString() === id);
-
-  if (!property) return notFound();
-
+export default function Page() {
   return (
     <div className="min-h-screen flex flex-col bg-[#F5F5F5]">
       <Header />
@@ -42,7 +21,6 @@ export default async function PropertyPage({
             Kontaktieren
           </Link>
         </div>
-        <PropertyDetails property={property} />
       </main>
       <Footer />
     </div>
