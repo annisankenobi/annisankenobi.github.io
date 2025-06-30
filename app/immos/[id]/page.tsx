@@ -5,12 +5,6 @@ import { properties } from "@/lib/data/immos";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-interface PropertyPageProps {
-  params: {
-    id: string;
-  };
-}
-
 // For static generation
 export async function generateStaticParams() {
   return properties.map((property) => ({
