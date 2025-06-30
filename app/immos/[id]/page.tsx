@@ -1,6 +1,14 @@
+import { notFound } from "next/navigation";
 import Header from "@/app/components/layout/Header";
 import Footer from "@/app/components/layout/Footer";
+import { properties } from "@/lib/data/immos";
 import Link from "next/link";
+
+export async function generateStaticParams(): Promise<{ id: string }[]> {
+  return properties.map((property) => ({
+    id: property.id.toString(),
+  }));
+}
 
 export default function Page() {
   return (
