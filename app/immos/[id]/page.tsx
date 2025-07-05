@@ -16,9 +16,9 @@ export async function generateStaticParams(): Promise<{ id: string }[]> {
 export default async function PropertyPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const { id } = params;
+  const { id } = await params;
 
   // Find the property matching the id
   const property = properties.find((p) => p.id === id);

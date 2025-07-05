@@ -10,9 +10,7 @@ interface PropertyDetailsProps {
 
 const PropertyDetails: React.FC<PropertyDetailsProps> = ({ property }) => {
   const [current, setCurrent] = useState(0);
-  const images = property.images ?? [
-    property.imageUrl || "/images/product-1.png",
-  ];
+  const images = property.images;
 
   return (
     <section className="md:section-sm px-4">
@@ -92,8 +90,8 @@ const PropertyDetails: React.FC<PropertyDetailsProps> = ({ property }) => {
 
           <div className="my-6">
             <h3 className="text-xl font-semibold mb-2">Merkmale</h3>
-            <div className="flex flex-wrap gap-2">
-              {property.features.map((feature, i) => (
+            <div className="flex flex-wrap gap-2">              
+              {property.features?.map((feature, i) => (
                 <span
                   key={i}
                   className="px-3 py-1 bg-gray-800 rounded-md text-sm text-white"

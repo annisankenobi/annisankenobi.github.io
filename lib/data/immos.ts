@@ -10,8 +10,8 @@ export interface Property {
   bathrooms: number;
   size: number;
   imageUrl: string;
-  images: string[];
-  features: string[];
+  images?: string[];
+  features?: string[];
   parking: string;
   locationDescription: string;
 }
