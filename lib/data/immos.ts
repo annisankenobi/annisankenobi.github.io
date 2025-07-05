@@ -5,6 +5,7 @@ export interface Property {
   title: string;
   description: string;
   price: number;
+  priceDisplay: string;
   location: string;
   beds: number;
   bathrooms: number;
@@ -23,10 +24,11 @@ export const properties: Property[] = [
     description:
       "Entdecken Sie den Komfort und die Bequemlichkeit des Stadtlebens in dieser großzügigen 3-Zimmer Wohnung im Herzen der Innenstadt. Mit viel Tageslicht, zahlreichen Annehmlichkeiten und einem privaten Balkon bietet diese Wohnung die perfekte Kombination aus Stil, Komfort und Funktionalität.",
     price: 1870,
+    priceDisplay: "ab 990€/Woche",
     location: "Mönchstr., Stuttgart-Mitte",
     beds: 2,
     bathrooms: 1.5,
-    size: 81,
+    size: 85,
     imageUrl: "/images/properties/mchgr/1.jpg",
     images: [
       "/images/properties/mchgr/1.jpg",
@@ -63,6 +65,7 @@ export const properties: Property[] = [
       "Dieses Apartment bietet Ihnen einen reibungslosen Start in Ihren Aufenthalt mit moderner Einrichtung, einer voll ausgestatteten Küche, TV, WLAN, Schlafcouch, usw. sodass Sie sich vom ersten Moment an wie zu Hause fühlen.",
 
     price: 673,
+    priceDisplay: "ab 625€/Woche",
     location: "Mönchstr, Stuttgart-Mitte",
     beds: 1,
     bathrooms: 1,
@@ -96,6 +99,7 @@ export const properties: Property[] = [
       "Mit viel Liebe zum Detail eingerichtet und ausgestattet mit vielfältigen Möbeln sowie einer voll ausgestatteten Küche werden Sie in diesem großzügigen Apartment sofort das Gefühl haben zu Hause zu sein. Ob Sie mit Blick ins Grüne kochen oder sich in einem der drei Schlafzimmer wohlverdient ausruhen, Sie werden alles lieben was dieses Killesberg Apartment zu bieten hat.",
 
     price: 1314,
+    priceDisplay: "ab 840€/Woche",
     location: "Hermann-Pleuer-Str, Killesberg",
     beds: 3,
     bathrooms: 1,
@@ -119,7 +123,7 @@ export const properties: Property[] = [
     ],
     parking: "Öffentlich",
     locationDescription:
-      "Killesberg ist ein ruhiges grünes Viertel, das für seinen entspannten Charme und die nahegelegenen Parks bekannt ist. Kostenlose Parkplätze gibt es in der Wohnstraße. Öffentliche Verkehrsmittel wie die U-Bahn und der Bus sind nur fünf Minuten zu Fuß entfernt, ebenso wie praktische Geschäfte wie Lidl, Edeka, DM und eine örtliche Bäckerei.",
+      "Killesberg ist ein ruhiges grünes Viertel, das für seinen entspannten Charme und die nahegelegenen Parks bekannt ist. Kostenlose Parkplätze gibt es in der Wohnstraße. Öffentliche Verkehrsmittel wie die U-Bahn und der Bus sind nur fünf Minuten zu Fuß entfernt, ebenso wie praktische Geschäfte wie Aldi, Edeka, DM und eine örtliche Bäckerei.",
   },
   {
     id: "4",
@@ -127,6 +131,7 @@ export const properties: Property[] = [
     description:
       "Fühlen Sie sich wie zu Hause in dieser großzügigen Wohnung mit einem Schlafzimmer mit Queensize Bett, Badezimmer, Küche und Wohnzimmer mit bequemem Schlafsofa. Genießen Sie viel Platz zum Entspannen, auch auf dem Balkon.",
     price: 727,
+    priceDisplay: "ab 715€/Woche",
     location: "Leiblweg, Killesberg",
     beds: 1,
     bathrooms: 1,
@@ -157,6 +162,7 @@ export const properties: Property[] = [
     description:
       "Stilvolle Einrichtung, eine komplett ausgestattete Küche mit modernen Geräten und ein sonniger Balkon mit Blick ins Grüne schaffen eine warme und einladende Wohnatmosphäre. Der großzügige Grundriss umfasst ein komfortables Schlafzimmer, ein modernes Badezimmer sowie einen offenen Wohn und Essbereich, der auf Wohlbefinden ausgelegt ist.",
     price: 842,
+    priceDisplay: "ab 730€/Woche",
     location: "Nibelungenstr, Stuttgart-Nord",
     beds: 1,
     bathrooms: 1,
@@ -186,34 +192,40 @@ export const properties: Property[] = [
   },
   {
     id: "6",
-    title: "Studio mit Terrasse direkt am Wald",
+    title: "3-Zimmer Wohnung in Stuttgart-West",
     description:
-      "Perfekt für Natur und Stadtliebhaber verbindet dieses Studio am Kräherwald modernen Komfort mit dem Leben im Freien. Genießen Sie eine komplett ausgestattete Küche und eine private Terrasse, auf der Sie Ihren frisch gebrühten Kaffee, Ihr Mittag oder Abendessen genießen können.",
+      "Diese voll ausgestattete 3-Zimmer-Wohnung in Stuttgart-West bietet zwei separate Schlafzimmer, einen gemütlichen Wohnbereich sowie eine ausgestattete Küche mit allem, was man für den Alltag braucht. Hier wohnen Sie ruhig, aber zentral – mit guter Anbindung und Infrastruktur direkt vor der Tür.",
     price: 290,
-    location: "Am Kräherwald, Stuttgart-West",
-    beds: 1,
+    priceDisplay: "ab 900€/Woche",
+    location: "Gutenbergstr., Stuttgart-West",
+    beds: 2,
     bathrooms: 1,
-    size: 30,
-    imageUrl: "/images/properties/krw/1.jpeg",
+    size: 56,
+    imageUrl: "/images/properties/gtb/1.jpeg",
     images: [
-      "/images/properties/krw/1.jpeg",
-      "/images/properties/krw/2.jpeg",
-      "/images/properties/krw/3.jpeg",
-      "/images/properties/krw/4.jpeg",
-      "/images/properties/krw/5.jpeg",
-      "/images/properties/krw/6.jpeg",
+      "/images/properties/gtb/1.jpeg",
+      "/images/properties/gtb/2.jpeg",
+      "/images/properties/gtb/3.jpeg",
+      "/images/properties/gtb/4.jpeg",
+      "/images/properties/gtb/5.jpeg",
+      "/images/properties/gtb/6.jpeg",
+      "/images/properties/gtb/7.jpeg",
+      "/images/properties/gtb/8.jpeg",
+      "/images/properties/gtb/9.jpeg",
+      "/images/properties/gtb/10.jpeg",
+      "/images/properties/gtb/11.jpeg"
+      
     ],
     features: [
       "Spülmaschine",
       "Waschmaschine",
       "WLAN",
       "Bettwäsche & Handtücher",
-      "Terrasse",
       "Zusätzliches Schlafsofa",
     ],
     parking: "Öffentlich",
     locationDescription:
-      "Das grüne Viertel Doggenburg in Stuttgart bietet zahlreiche Outdoor Sportmöglichkeiten wie Fußball, Tennis, Laufen oder Reiten und ist gut an das Einkaufszentrum Höhenpark sowie das Stadtzentrum mit der Buslinie 43 angebunden. Bewohner profitieren zudem von vielen Parkmöglichkeiten für stressfreies Kommen und Gehen.",
+      "In direkter Umgebung finden sich Cafés, Supermärkte und Restaurants. Die Anbindung ist sehr gut: Mit der S-Bahn oder dem Bus erreicht man schnell den Hauptbahnhof oder andere Stadtteile. Auch für einen Spaziergang im Feierabend bieten sich nahegelegene Parks wie der Feuersee oder der Weißenburgpark an. Parkmöglichkeiten sind in der Umgebung vorhanden.",
   },
   {
     id: "7",
@@ -221,6 +233,7 @@ export const properties: Property[] = [
     description:
       "Diese großzügige 2-Zimmer Wohnung verfügt über eine komplett ausgestattete Küche, ein helles Schlafzimmer mit Spiegelschrank, ein Badezimmer und ein großzügiges Wohnzimmer mit kleinem Essbereich und einem Schlafsofa. Ein gemeinschaftlicher Garten lädt zu ruhigen Momenten im Freien ein.",
     price: 420,
+    priceDisplay: "ab 630€/Woche",
     location: "Raffstr, Stuttgart-Degerloch",
     beds: 1,
     bathrooms: 1,
@@ -251,8 +264,9 @@ export const properties: Property[] = [
     id: "8",
     title: "4-Zimmer Wohnung in Stuttgart-Zuffenhausen",
     description:
-      "Die voll-möblierte Wohnung befindet sich im Dachgeschoss eines ruhigen Mehrfamilienhauses. Sie ist circa 110 qm groß und verfügt über vier separat abschließbare Zimmer mit Betten. Die Zimmer und die Küche sind mit dem Nötigsten ausgestattet. Der Balkon eignet sich ideal zum gemeinsamen Speisen oder zum Entspannen. Ein großer Privatparkplatz ist vorhanden – ausreichend für zwei normale PKWs oder einen größeren Van.",
+      "Die voll-möblierte Wohnung befindet sich im Dachgeschoss eines ruhigen Mehrfamilienhauses. Sie ist circa 110 qm groß und verfügt über vier separat abschließbare Zimmer mit Betten. Die Zimmer und die Küche sind mit dem Nötigsten ausgestattet. Der Balkon eignet sich ideal zum gemeinsamen Speisen oder zum Entspannen. Ein großer Privatparkplatz ist vorhanden – ausreichend für zwei normale PKWs oder einen größeren Van.",
     price: 1230,
+    priceDisplay: "ab 1050€/Woche",
     location: "Schwieberdingerstr., Stuttgart-Zuffenhausen",
     beds: 4,
     bathrooms: 1.5,
@@ -289,6 +303,7 @@ export const properties: Property[] = [
     description:
       "Diese funktionale 4-Zimmer Wohnung in Stuttgart-Zuffenhausen eignet sich ideal für berufliche Aufenthalte, Projektteams oder Monteure. Vier separate Schlafzimmer bieten Privatsphäre und Rückzugsmöglichkeiten nach einem langen Arbeitstag. Eine voll ausgestattete Küche, ein modernes Bad und ein gemütlicher Wohnbereich sorgen für einen angenehmen Aufenthalt. Der private Balkon bietet zusätzlichen Raum zum Entspannen. Die praktische Lage und die solide Ausstattung machen diese Wohnung zur optimalen Unterkunft für kurze oder längere Einsätze oder geschäftliche Aufenthalte.",
     price: 315,
+    priceDisplay: "ab 610€/Woche",
     location: "Freudenstädterstr, Horb am Neckar",
     beds: 3,
     bathrooms: 1,

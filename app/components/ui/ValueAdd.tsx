@@ -17,7 +17,7 @@ const values = [
     icon: <Filter className="text-primary w-8 h-8 mb-4" />,
     title: "Kosten­effizient",
     description:
-      "Profitieren Sie von kosteneffizientem Wohnen mit transparenten Preisen (auf Anfrage), da unsere Firmenwohnungen um 20-50% günstiger sind als Hotels oder Airbnbs, ohne Kompromisse bei der Qualität einzugehen.",
+      "Profitieren Sie von kosteneffizientem Wohnen mit transparenten Preisen (auf Anfrage), da unsere Firmenwohnungen um 20-50% günstiger sind als Hotels oder Airbnbs.",
   },
 ];
 
