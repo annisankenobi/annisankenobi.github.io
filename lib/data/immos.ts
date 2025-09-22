@@ -20,7 +20,7 @@ export interface Property {
 export const properties: Property[] = [
   {
     id: "1",
-    title: "Zentrale 3-Zimmer Wohnung mit Privat Stellplatz und Balkon",
+    title: "3-Zimmer Wohnung mit Privat Stellplatz und Balkon am Milaneo",
     description:
       "Entdecken Sie den Komfort und die Bequemlichkeit des Stadtlebens in dieser großzügigen 3-Zimmer Wohnung im Herzen der Innenstadt. Mit viel Tageslicht, zahlreichen Annehmlichkeiten und einem privaten Balkon bietet diese Wohnung die perfekte Kombination aus Stil, Komfort und Funktionalität.",
     price: 1870,
@@ -94,7 +94,7 @@ export const properties: Property[] = [
   },
   {
     id: "3",
-    title: "3,5-Zimmer Wohnung in Stuttgart-Nord (am Killesberg)",
+    title: "3,5-Zimmer Wohnung am Killesberg",
     description:
       "Mit viel Liebe zum Detail eingerichtet und ausgestattet mit vielfältigen Möbeln sowie einer voll ausgestatteten Küche werden Sie in diesem großzügigen Apartment sofort das Gefühl haben zu Hause zu sein. Ob Sie mit Blick ins Grüne kochen oder sich in einem der drei Schlafzimmer wohlverdient ausruhen, Sie werden alles lieben was dieses Killesberg Apartment zu bieten hat.",
 
@@ -127,7 +127,7 @@ export const properties: Property[] = [
   },
   {
     id: "4",
-    title: "Großzügige Wohnung am Killesberg Park",
+    title: "2-Zimmer Wohnung am Killesberg",
     description:
       "Fühlen Sie sich wie zu Hause in dieser großzügigen Wohnung mit einem Schlafzimmer mit Queensize Bett, Badezimmer, Küche und Wohnzimmer mit bequemem Schlafsofa. Genießen Sie viel Platz zum Entspannen, auch auf dem Balkon.",
     price: 727,
@@ -158,7 +158,7 @@ export const properties: Property[] = [
   },
   {
     id: "5",
-    title: "2-Zimmer Wohnung mit Balkon am Löwentor",
+    title: "2-Zimmer Wohnung mit Balkon bei der Löwentorbrücke",
     description:
       "Stilvolle Einrichtung, eine komplett ausgestattete Küche mit modernen Geräten und ein sonniger Balkon mit Blick ins Grüne schaffen eine warme und einladende Wohnatmosphäre. Der großzügige Grundriss umfasst ein komfortables Schlafzimmer, ein modernes Badezimmer sowie einen offenen Wohn und Essbereich, der auf Wohlbefinden ausgelegt ist.",
     price: 842,
@@ -174,6 +174,10 @@ export const properties: Property[] = [
       "/images/properties/nbl/3.jpeg",
       "/images/properties/nbl/4.jpeg",
       "/images/properties/nbl/5.jpeg",
+      "/images/properties/nbl/6.jpeg",
+      "/images/properties/nbl/7.jpeg",
+      "/images/properties/nbl/8.jpeg",
+      "/images/properties/nbl/9.jpeg",
     ],
     features: [
       "Spülmaschine",
@@ -213,8 +217,7 @@ export const properties: Property[] = [
       "/images/properties/gtb/8.jpeg",
       "/images/properties/gtb/9.jpeg",
       "/images/properties/gtb/10.jpeg",
-      "/images/properties/gtb/11.jpeg"
-      
+      "/images/properties/gtb/11.jpeg",
     ],
     features: [
       "Spülmaschine",

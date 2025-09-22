@@ -12,7 +12,6 @@ type Property = {
   bathrooms: number;
   size: number;
   parking?: string;
-  priceDisplay: string;
 };
 
 type PropertyCardProps = {
@@ -33,9 +32,6 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         />
         <div className="p-4">
           <h3 className="text-xl font-semibold mb-2">{property.title}</h3>
-          <div className="text-lg font-semibold text-gray-600 mb-3">
-            {property.priceDisplay}
-          </div>
           <div className="flex flex-wrap gap-2 text-sm text-gray-600 dark:text-darkmode-text-light">
             <div className="flex items-center gap-1">
               <Bed size={16} /> {property.beds} Schlafzimmer

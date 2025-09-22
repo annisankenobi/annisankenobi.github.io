@@ -24,7 +24,7 @@ export default function AllProperties({ searchValue = "" }) {
         </h1>
         <p className="text-text-light dark:text-darkmode-text-light max-w-l mx-auto">
           Wir teilen Ihnen einen individuell abgestimmten Mietpreis mit –
-          abhängig von Personenzahl, Bedarf und Aufenthaltsdauer.
+          abhängig von Personenzahl und Aufenthaltsdauer.
         </p>
       </div>
 
